@@ -37,10 +37,6 @@ const Home: NextPage = () => {
             <h2>作業4 &rarr;</h2>
           </button>
 
-          <button type="button" onClick={() => router.push('/text')} className={styles.card}>
-            <h2>text &rarr;</h2>
-          </button>
-
           {/* <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}

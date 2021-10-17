@@ -1,3 +1,4 @@
+export default
 {
   "compilerOptions": {
     "target": "es5",

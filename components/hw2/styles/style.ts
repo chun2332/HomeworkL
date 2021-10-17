@@ -8,7 +8,7 @@ export const CardHeader = styled.div`
   border-radius: 3px;
   background-color: #3c3c3c;
   color: #fff;
-  line-height: 3em;
+  line-height: 50px;
 
   .w-165 {
     width: 165px;
@@ -121,7 +121,6 @@ export const Card = styled.div.attrs({
     border: 1px solid #ccc;
     font-size: 16px;
     box-shadow: 2px 2px 7px rgba(128, 125, 125, 0.7);
-    letter-spacing: 1px;
     tbody {
       margin-top: 20px;
     }
@@ -143,7 +142,7 @@ export const Card = styled.div.attrs({
     }
 
     tr {
-      margin-left: 10%;
+      margin-left: 9%;
     }
 
     &:hover {
@@ -165,7 +164,7 @@ export const Card = styled.div.attrs({
     td,
     tr {
       display: block;
-      margin-top: 10px;
+      margin-top: 20px;
     }
 
     thead tr {
@@ -178,17 +177,21 @@ export const Card = styled.div.attrs({
       margin-top: 5px;
     }
 
+    td > .product {
+      width: 210px;
+    }
+
     .status {
       position: absolute;
-      left: 116px;
-      bottom: -1px;
+      left: 120px;
+      bottom: 0px;
     }
 
     .lion {
       width: 51px;
       position: absolute;
       bottom: 0px;
-      left: 150px;
+      left: 155px;
       border-bottom: 1px dashed black;
     }
 
@@ -196,7 +199,6 @@ export const Card = styled.div.attrs({
       position: absolute;
       right: 100%;
       text-align: right;
-      width: 45%;
       padding-right: 10px;
       white-space: nowrap;
       font-weight: 450;
@@ -228,7 +230,7 @@ export const Card = styled.div.attrs({
       content: "狀況";
       position: absolute;
       bottom: -3px;
-      left: 35px;
+      left: 78px;
     }
     td:nth-of-type(9):before {
       content: "證照進度";
@@ -254,8 +256,8 @@ export const Card = styled.div.attrs({
 
     Button {
       display: inline-block;
-      margin-right: 0px;
       margin-top: 20px;
+      margin-bottom: 10px;
       width: 130px;
       font-size: 16px;
       line-height: 35px;
@@ -264,7 +266,7 @@ export const Card = styled.div.attrs({
     .btn {
       display: flex;
       margin-top: 20px;
-      margin-left: -70px;
+      margin-left: -69px;
     }
 
     .btn-TT {
@@ -303,4 +305,3 @@ export const Button = styled.button`
 
 
 export default {};
-

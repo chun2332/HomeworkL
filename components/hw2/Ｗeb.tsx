@@ -100,8 +100,10 @@ const Web: React.FC<A_Name> = ({ props }) => {
                     {data.total }
                     {data.status !== "取消訂單" && ""
                     }
+                    <div style={{fontSize:'9.8px'}}>
                     {data.wlk === true && <Wlk />}
-                    {data.unwlk ===true && <Unwlk/>}
+                    {data.unwlk === true && <Unwlk />}
+                    </div>
                     </td>
                     <td></td>
                     <td className="w-110">

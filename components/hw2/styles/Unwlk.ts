@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const IconsColor = styled.p`
-width: 80px;
 color: #ccc;
 margin: 0;
 font-weight: 200;
