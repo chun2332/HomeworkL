@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Body = styled.div``;
 
-export const CardHeader = styled.div`
+export const CardHeader = styled.table`
   max-width: 1190px;
   margin: auto;
   border-radius: 3px;
@@ -37,7 +37,7 @@ export const CardHeader = styled.div`
   }
 `;
 
-export const Card = styled.div.attrs({
+export const Card = styled.table.attrs({
   className: "w-165 w-115 w-110 w-100 w-80 w-70 w-60",
 })<{ status?: string }>`
   max-width: 1190px;
