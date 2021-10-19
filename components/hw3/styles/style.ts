@@ -48,7 +48,6 @@ export const Calendar = styled.table`
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        position: relative
     }
     .ticket-back {
         display: -webkit-box;
@@ -92,7 +91,7 @@ export const Calendar = styled.table`
         margin-top: 15px;
     }
 
-    /*  最便宜區塊 */
+    /*  最低價區塊 */
     .container-sale {
         display: -webkit-box;
         display: -ms-flexbox;

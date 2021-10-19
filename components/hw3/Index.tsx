@@ -22,7 +22,6 @@ const Index = () => {
             <span className="next-btn"></span>
         </div>
         <Calendar>
-            <thead>
                {/* row0 */}
                 <tr className="low-price-container">
                     <td className="low-price" colSpan={8}>
@@ -292,7 +291,6 @@ const Index = () => {
                         <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                 </tr>
-            </thead>
        </Calendar>
     </>
 }
