@@ -5,11 +5,35 @@ export const DateCard = styled.table`
     border: 1px #eeecec solid;
     width: 100%;
     text-align: center;
+    /* table */
+    th, td {
+            height: 50px;
+            width: 12.5%;
+            outline: 1px #dad8d8 solid;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        }
+    th {
+        color: #3d3b3b;
+        padding: 0.8rem 0.5rem;
+        background-color: #eeecec;
+        }
 
+    /* 低價月曆 */
+    .low-price-container {
+        width: 100%;
+        text-align: center;
+    }
+    .low-price {
+        font-size: 1rem;
+        text-align: right;
+        background-color: #eeecec;
+        color: #008cff;
+        border-bottom: 2px solid white;
+    }
     .row1 > th {
         background-color: #f8f8f8;
     }
-
     .Lowprice {
         width: 100%;
     }
@@ -25,7 +49,6 @@ export const DateCard = styled.table`
         flex-direction: column;
         position: relative
     }
-
     .ticket-back {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -38,7 +61,6 @@ export const DateCard = styled.table`
         -ms-flex-pack: end;
         justify-content: end;
     }
-
     .ticket-coming {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -51,20 +73,7 @@ export const DateCard = styled.table`
         -ms-flex-pack: start;
         justify-content: start;
     }
-
-    th, td {
-        height: 50px;
-        width: 12.5%;
-        outline: 1px #dad8d8 solid;
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    }
-
-    th {
-        color: #3d3b3b;
-        padding: 0.8rem 0.5rem;
-        background-color: #eeecec;
-    }
+   
 
     /* 文字灰色 */
     .text-gray {
@@ -78,7 +87,6 @@ export const DateCard = styled.table`
         margin-left: 20px;
         color: #1c9b9e;
     }
-
     .remove-padding {
         margin-top: 15px;
     }
@@ -97,7 +105,6 @@ export const DateCard = styled.table`
         justify-content: space-between;
         padding-bottom: 1rem;
     }
-
     .container-sale-a {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -114,7 +121,6 @@ export const DateCard = styled.table`
         -ms-flex-pack: center;
         justify-content: center;
     }
-
     .trangle {
         display: inline-block;
         width: 0;
@@ -123,20 +129,17 @@ export const DateCard = styled.table`
         border-width: 1.7rem 1.7rem 0 0;
         border-color: #fe8400 transparent;
     }
-
     .sale {
         color: #fe8400;
     }
 
     /*價格*/
     .days-up {
-    cursor: pointer;
-    letter-spacing: 1px;
-    word-spacing: 5px;
+    white-space: nowrap;
+    word-spacing: 3px;
     font-weight: 700;
     color: #3d3b3b;
     }
-
     .days-up::after {
     font-weight: 900;
     content: ' 起';
@@ -145,10 +148,15 @@ export const DateCard = styled.table`
     }
 
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 760px) {
+        table-layout: auto;
         overflow-x: scroll;
         overflow-y: visible;
         padding: 0;
+
+        th, td {
+            overflow: hidden;
+        }
 
         .carousel-btn {
             height: 2.8rem;
@@ -176,13 +184,13 @@ export const DateCard = styled.table`
             cursor: pointer;
         }
         
-
-        .carousel-btn-prev .prev-btn::after {
-            font-weight: 900;
-            content: url("../../../img/prev-btn.svg");
-        }
-        .carousel-btn-next .next-btn::after {
-            content: url("../../../img/next-btn.svg");
-        }
+         .first-col {
+            position: -webkit-sticky;
+            position: sticky;
+            left: 0;
+            top: auto;
+            border-top-width: 1px;
+            margin-top: -1px;
+         }
     }
 `

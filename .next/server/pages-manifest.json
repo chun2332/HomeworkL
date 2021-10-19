@@ -3,5 +3,6 @@
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
   "/hw3": "pages/hw3.js",
-  "/hw2": "pages/hw2.js"
+  "/hw2": "pages/hw2.js",
+  "/": "pages/index.js"
 }

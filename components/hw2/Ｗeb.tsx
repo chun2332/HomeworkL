@@ -31,7 +31,7 @@ interface A_Name {
 const Web: React.FC<A_Name> = ({ props }) => {
 
   // 此元件被呼叫時, 先印出props值
-  console.log("input value = ", props);
+  // console.log("input value = ", props);
   // 回傳元件
   return (
     <Body>

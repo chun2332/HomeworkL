@@ -1,4 +1,7 @@
-import { MdDateRange } from 'react-icons/md';
+// icons
+import { MdCalendarToday } from 'react-icons/md';
+import { IoMdArrowDropup } from 'react-icons/io';
+// styles
 import  { DateCard }  from './styles/style';
 import Link from "next/link";
 
@@ -16,8 +19,10 @@ const Date_card = () => {
         <DateCard>
             <thead>
                {/* row0 */}
-                <tr className="Lowprice">
-                    <td><MdDateRange />低價月曆</td>
+                <tr className="low-price-container">
+                    <td className="low-price" colSpan={8}>
+                        <MdCalendarToday />低價月曆<IoMdArrowDropup />
+                    </td>
                 </tr>
                  {/* row1 */}
                 <tr className="row1">
@@ -56,7 +61,7 @@ const Date_card = () => {
                 </tr>
                 {/* row2 */}
                 <tr>
-                    <th>12/27(三)</th>
+                    <th className="first-col">12/27(三)</th>
                     <td className="col-1 text-gray">--</td>
                     <td className="col-2">
                         <Link href="/"><a className="days-up">$15,568 </a></Link>
@@ -91,7 +96,7 @@ const Date_card = () => {
                 </tr>
                 {/* row3 */}
                 <tr>
-                    <th>12/28(四)</th>
+                    <th className="first-col">12/28(四)</th>
                     <td>
                         <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
@@ -128,7 +133,7 @@ const Date_card = () => {
                 </tr>
                 {/* row4 */}
                 <tr>
-                    <th>12/29(五)</th>
+                    <th className="first-col">12/29(五)</th>
                     <td className="text-gray">
                         <Link href="/"><a>查看</a></Link>
                     </td>
@@ -153,7 +158,7 @@ const Date_card = () => {
                 </tr>
                 {/* row5 */}
                 <tr>
-                    <th>12/30(六)</th>
+                    <th className="first-col">12/30(六)</th>
                     <td className="text-gray">
                         <Link href="/"><a>查看</a></Link>
                     </td>
@@ -190,7 +195,7 @@ const Date_card = () => {
                 </tr>
                 {/* row6 */}
                 <tr>
-                    <th>12/31(日)</th>
+                    <th className="first-col">12/31(日)</th>
                     <td className="text-gray">
                         <Link href="/"><a>查看</a></Link>
                     </td>
@@ -227,7 +232,7 @@ const Date_card = () => {
                 </tr>
                 {/* row7 */}
                 <tr>
-                    <th>
+                    <th className="first-col">
                         <div>
                             <span className="year">
                                 <span>2018</span>
@@ -259,7 +264,7 @@ const Date_card = () => {
                 </tr>
                 {/* row8 */}
                 <tr>
-                    <th>01/02(二)</th>
+                    <th className="first-col">01/02(二)</th>
                     <td className="text-gray">
                         <Link href="/"><a>查看</a></Link>
                     </td>
