@@ -230,7 +230,7 @@ export const Card = styled.table.attrs({
       content: "狀況";
       position: absolute;
       bottom: -3px;
-      left: 78px;
+      left: 77px;
     }
     td:nth-of-type(9):before {
       content: "證照進度";

@@ -25,15 +25,15 @@ const Home: NextPage = () => {
         </p>
 
         <div className={styles.grid}>
-          <button type="button" onClick={() => router.push('/hw2')} className={styles.card}>
+          <button type="button" onClick={() => router.push('/Hw2')} className={styles.card}>
             <h2>作業2 &rarr;</h2>
           </button>
 
-          <button type="button" onClick={() => router.push('/hw3')} className={styles.card}>
+          <button type="button" onClick={() => router.push('/Hw3')} className={styles.card}>
             <h2>作業3 &rarr;</h2>
           </button>
 
-          <button type="button" onClick={() => router.push('/hw4')} className={styles.card}>
+          <button type="button" onClick={() => router.push('/Hw4')} className={styles.card}>
             <h2>作業4 &rarr;</h2>
           </button>
 

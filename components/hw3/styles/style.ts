@@ -1,17 +1,18 @@
 import styled from "styled-components";
 
-export const DateCard = styled.table`
+export const Calendar = styled.table`
     border-spacing: 0;
     border: 1px #eeecec solid;
     width: 100%;
     text-align: center;
     /* table */
     th, td {
-            height: 50px;
-            width: 12.5%;
-            outline: 1px #dad8d8 solid;
-            -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+        width: 12.5%;
+        text-align: center;
+        height: 50px;
+        outline: 1px #dad8d8 solid;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
         }
     th {
         color: #3d3b3b;

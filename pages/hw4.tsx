@@ -1,6 +1,8 @@
+import Index from '../components/hw4/Index'
+
 function Hw4() {
     return <div>
-        <h1>作業4</h1>
+        <Index />
     </div>
 }
 

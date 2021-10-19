@@ -1,6 +1,6 @@
-import Web from "../components/hw2/Ｗeb";
+import Index from "../components/hw2/Index";
 // data
-import sampledata from "../data";
+import sampledata from "../components/hw2/data";
 
 function Hw2() {
   const { data } = sampledata; // 使用匯入的資料
@@ -8,7 +8,7 @@ function Hw2() {
 
   return (
     <div style={{ marginTop: "10px" }}>
-      <Web props={data} />
+      <Index props={data} />
     </div>
   );
 }
