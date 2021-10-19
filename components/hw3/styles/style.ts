@@ -5,7 +5,7 @@ export const DateCard = styled.table`
     border: 1px solid #ccc;
     color: #444444;
     width: 100%;
-    margin: auto;   
+    /* margin: auto;    */
     text-align: center;
 
     .row1 > th {
@@ -13,9 +13,7 @@ export const DateCard = styled.table`
     }
 
     .M-date {
-        line-height: 50px;
         width: 100%;
-        height: 50px;
     }
    
     .ticket-type {
@@ -54,8 +52,8 @@ export const DateCard = styled.table`
         left: 3px;
     }
 
-    td:focus {
-        border:1px solid #fe8400;
+    .price {
+        font-weight: 700;
     }
 
     th, td {
@@ -69,10 +67,22 @@ export const DateCard = styled.table`
         background-color: #eeecec;
     }
 
+
+
+    /* 文字灰色 */
+    .text-gray {
+        color: #666;
+    }
+
     /* 小字年份 */
     .year {
+        margin-top: 10px;
         margin-left: 20px;
         color: #1c9b9e;
+    }
+
+    .remove-padding {
+        margin-top: 15px;
     }
 
     /*  三角形 */
@@ -91,5 +101,12 @@ export const DateCard = styled.table`
     }
     .sale {
         color: #fe8400;
+    }
+
+
+    @media screen and (max-width: 760px) {
+        overflow-x: scroll;
+        overflow-y: visible;
+        padding: 0;
     }
 `
