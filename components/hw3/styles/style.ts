@@ -2,20 +2,19 @@ import styled from "styled-components";
 
 export const DateCard = styled.table`
     border-spacing: 0;
-    border: 1px solid #ccc;
-    color: #444444;
+    border: 1px #eeecec solid;
     width: 100%;
-    /* margin: auto;    */
     text-align: center;
 
     .row1 > th {
         background-color: #f8f8f8;
     }
 
-    .M-date {
+    .Lowprice {
         width: 100%;
     }
    
+    /* 回程 & 去程 */
     .ticket-type {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -27,7 +26,7 @@ export const DateCard = styled.table`
         position: relative
     }
 
-    .ticket-coming, .ticket-back {
+    .ticket-back {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -40,41 +39,40 @@ export const DateCard = styled.table`
         justify-content: end;
     }
 
-    .ticket-back {
-        position: absolute;
-        bottom: 0.6vh;
-        right: 5px;
-    }
-
     .ticket-coming {
-        position: absolute;
-        top: 5px;
-        left: 3px;
-    }
-
-    .price {
-        font-weight: 700;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: rows;
+        flex-direction: rows;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
     }
 
     th, td {
         height: 50px;
-        border-top: 1px solid #ccc;
-        border-right: 1px solid #ccc;
+        width: 12.5%;
+        outline: 1px #dad8d8 solid;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     }
 
     th {
-        padding: 0;
+        color: #3d3b3b;
+        padding: 0.8rem 0.5rem;
         background-color: #eeecec;
     }
 
-
-
     /* 文字灰色 */
     .text-gray {
+        font-weight: 900;
         color: #666;
     }
 
-    /* 小字年份 */
+    /* 2018 */
     .year {
         margin-top: 10px;
         margin-left: 20px;
@@ -85,12 +83,38 @@ export const DateCard = styled.table`
         margin-top: 15px;
     }
 
-    /*  三角形 */
-    .d-flex {
-        margin-left: -2px;
-        margin-top: -15px;
+    /*  最便宜區塊 */
+    .container-sale {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding-bottom: 1rem;
     }
+
+    .container-sale-a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        white-space: nowrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
     .trangle {
         display: inline-block;
         width: 0;
@@ -99,14 +123,66 @@ export const DateCard = styled.table`
         border-width: 1.7rem 1.7rem 0 0;
         border-color: #fe8400 transparent;
     }
+
     .sale {
         color: #fe8400;
     }
 
+    /*價格*/
+    .days-up {
+    cursor: pointer;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-weight: 700;
+    color: #3d3b3b;
+    }
 
-    @media screen and (max-width: 760px) {
+    .days-up::after {
+    font-weight: 900;
+    content: ' 起';
+    font-size: 0.7rem;
+    color: #666;
+    }
+
+
+    @media screen and (max-width: 900px) {
         overflow-x: scroll;
         overflow-y: visible;
         padding: 0;
+
+        .carousel-btn {
+            height: 2.8rem;
+            width: 1.3rem;
+            background-color: #666;
+            opacity: 0.5;
+            position: absolute;
+            z-index: 99;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            text-align: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            color: white;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        
+
+        .carousel-btn-prev .prev-btn::after {
+            font-weight: 900;
+            content: url("../../../img/prev-btn.svg");
+        }
+        .carousel-btn-next .next-btn::after {
+            content: url("../../../img/next-btn.svg");
+        }
     }
 `

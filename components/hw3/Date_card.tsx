@@ -1,13 +1,22 @@
 import { MdDateRange } from 'react-icons/md';
-import { DateCard } from './styles/style';
+import  { DateCard }  from './styles/style';
 import Link from "next/link";
+
+
 
 const Date_card = () => {
     return <>
+        {/* prev & next btn */}
+        <div className="carousel-btn carousel-btn-prev">
+            <span className="prev-btn"></span>
+        </div>
+        <div className="carousel-btn carousel-btn-next">
+            <span className="next-btn"></span>
+        </div>
         <DateCard>
             <thead>
                {/* row0 */}
-                <tr>
+                <tr className="Lowprice">
                     <td><MdDateRange />低價月曆</td>
                 </tr>
                  {/* row1 */}
@@ -42,63 +51,79 @@ const Date_card = () => {
                         <div className="remove-padding">01/04(四)</div>
                     </th>
                     <th>
-                        <div >01/05(五)</div>
+                        <div className="remove-padding">01/05(五)</div>
                     </th>
                 </tr>
                 {/* row2 */}
                 <tr>
                     <th>12/27(三)</th>
                     <td className="col-1 text-gray">--</td>
-                    <td className="col-2 price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td className="col-2">
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="col-3 price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td className="col-3">
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="col-4 price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td className="col-4">
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                     <td className="col-5">
-                        <span className="d-flex">
-                            <div className="trangle"></div>
-                                <span className="sale">最便宜</span>
-                        </span>
-                            <Link href="/"><a className="price">$15,568</a></Link>
+                        <div className="container-sale">
+                            <Link href="/">
+                                <a className="container-sale-a">
+                                    <span>
+                                        <div className="trangle"></div>
+                                        <span className="sale">最便宜</span>
+                                    </span>
+                                </a>
+                            </Link>
+                            <Link href="/">
+                                <a className="days-up">$15,568 </a>
+                            </Link>
+                        </div>
                     </td>
-                    <td className="col-6 price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td className="col-6">
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="col-7 price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td className="col-7">
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                 </tr>
                 {/* row3 */}
                 <tr>
                     <th>12/28(四)</th>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
+                    </td>
+                    <td className="col-5">
+                    <div className="container-sale">
+                            <Link href="/">
+                                <a className="container-sale-a">
+                                    <span>
+                                        <div className="trangle"></div>
+                                        <span className="sale">最便宜</span>
+                                    </span>
+                                </a>
+                        </Link>
+                        <Link href="/">
+                                <a className="days-up">$12,300 </a>
+                        </Link>
+                        </div>
                     </td>
                     <td>
-                    <span className="d-flex">
-                            <div className="trangle"></div>
-                                <span className="sale">最便宜</span>
-                        </span>
-                            <Link href="/"><a className="price">$12,300</a></Link>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
-                    </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                 </tr>
                 {/* row4 */}
@@ -107,23 +132,23 @@ const Date_card = () => {
                     <td className="text-gray">
                         <Link href="/"><a>查看</a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                 </tr>
                 {/* row5 */}
@@ -135,24 +160,32 @@ const Date_card = () => {
                     <td className="text-gray">
                         <Link href="/"><a>查看</a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                     <td>
-                    <span className="d-flex">
-                            <div className="trangle"></div>
-                                <span className="sale">最便宜</span>
-                        </span>
-                            <Link href="/"><a className="price">$12,300</a></Link>
+                        <div className="container-sale">
+                            <Link href="/">
+                                <a className="container-sale-a">
+                                    <span>
+                                        <div className="trangle"></div>
+                                        <span className="sale">最便宜</span>
+                                    </span>
+                                </a>
+                            </Link>
+                            <Link href="/">
+                                <a className="days-up">$12,300 </a>
+                            </Link>
+                        </div>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price"> 
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td> 
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                 </tr>
                 {/* row6 */}
@@ -167,21 +200,29 @@ const Date_card = () => {
                     <td className="text-gray">
                         <Link href="/"><a>查看</a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
-                    </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                     <td>
-                    <span className="d-flex">
-                            <div className="trangle"></div>
-                                <span className="sale">最便宜</span>
-                        </span>
-                        <Link href="/"><a className="price">$12,300</a></Link>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <div className="container-sale">
+                            <Link href="/">
+                                <a className="container-sale-a">
+                                    <span>
+                                        <div className="trangle"></div>
+                                        <span className="sale">最便宜</span>
+                                    </span>
+                                </a>
+                            </Link>
+                            <Link href="/">
+                                <a className="days-up">$12,300 </a>
+                            </Link>
+                        </div>
+                    </td>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                 </tr>
                 {/* row7 */}
@@ -206,14 +247,14 @@ const Date_card = () => {
                     <td className="text-gray">
                         <Link href="/"><a>查看</a></Link>
                     </td>
-                    <td className="price"> 
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td> 
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                    <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                    <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                 </tr>
                 {/* row8 */}
@@ -237,8 +278,8 @@ const Date_card = () => {
                     <td className="text-gray">
                         <Link href="/"><a>查看</a></Link>
                     </td>
-                    <td className="price">
-                        <Link href="/"><a>$15,568</a></Link>
+                    <td>
+                        <Link href="/"><a className="days-up">$15,568 </a></Link>
                     </td>
                 </tr>
             </thead>
