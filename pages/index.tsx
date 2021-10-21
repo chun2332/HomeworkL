@@ -19,10 +19,10 @@ const Home: NextPage = () => {
           Hello <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <p className={styles.description}>
+        {/* <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
-        </p>
+        </p> */}
 
         <div className={styles.grid}>
           <button type="button" onClick={() => router.push('/Hw2')} className={styles.card}>
@@ -30,22 +30,9 @@ const Home: NextPage = () => {
           </button>
 
           <button type="button" onClick={() => router.push('/Hw3')} className={styles.card}>
-            <h2>作業3 &rarr;</h2>
+              <h2>作業3 &rarr;</h2>
           </button>
 
-          <button type="button" onClick={() => router.push('/Hw4')} className={styles.card}>
-            <h2>作業4 &rarr;</h2>
-          </button>
-
-          {/* <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a> */}
         </div>
       </main>
 
