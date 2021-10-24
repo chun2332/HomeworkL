@@ -1,11 +1,18 @@
 import styled from "styled-components";
 
+export const Body = styled.div`
+    @media (max-width: 900px) {
+        overflow-x: scroll;
+        overflow-y: visible;
+        padding: 0;
+    } 
+`
+
 export const Calendar = styled.table`
     border-spacing: 0;
     border: 1px #eeecec solid;
     width: 100%;
-    text-align: center;
-    /* table */
+
     th, td {
         width: 12.5%;
         text-align: center;
@@ -19,6 +26,11 @@ export const Calendar = styled.table`
         padding: 0.8rem 0.5rem;
         background-color: #eeecec;
         }
+    td {
+        padding: 0;
+
+        
+    }
 
     /* 低價月曆 */
     .low-price-container {
@@ -85,10 +97,25 @@ export const Calendar = styled.table`
     .year {
         margin-top: 10px;
         margin-left: 20px;
-        color: #1c9b9e;
+        color: #24a07c;
     }
     .remove-padding {
-        margin-top: 15px;
+       padding: 0 0.5rem;
+    }
+    .fix-padding {
+        padding: 0.3rem 0.5rem;
+    }
+    .year-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     /*  最低價區塊 */
@@ -133,34 +160,26 @@ export const Calendar = styled.table`
         color: #fe8400;
     }
 
-    /*價格*/
+    /* 價格 */
     .days-up {
-    white-space: nowrap;
-    word-spacing: 3px;
-    font-weight: 700;
-    color: #3d3b3b;
-    }
-    .days-up::after {
-    font-weight: 900;
-    content: ' 起';
-    font-size: 0.7rem;
-    color: #666;
-    }
-
-
-    @media screen and (max-width: 760px) {
-        table-layout: auto;
-        overflow-x: scroll;
-        overflow-y: visible;
-        padding: 0;
-
-        th, td {
-            overflow: hidden;
+        white-space: nowrap;
+        word-spacing: 3px;
+        font-weight: 700;
+        color: #3d3b3b;
         }
+        .days-up::after {
+        font-weight: 900;
+        content: ' 起';
+        font-size: 0.7rem;
+        color: #666;
+    }
 
-        .carousel-btn {
-            height: 2.8rem;
-            width: 1.3rem;
+    @media (max-width: 900px) {
+        width: 160%;
+        
+        /* .carousel-btn {
+            height: 4rem;
+            width: 1.5rem;
             background-color: #666;
             opacity: 0.5;
             position: absolute;
@@ -179,10 +198,9 @@ export const Calendar = styled.table`
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-            color: white;
+            color: black;
             font-weight: 900;
-            cursor: pointer;
-        }
+        } */
         
          .first-col {
             position: -webkit-sticky;

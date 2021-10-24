@@ -33,6 +33,10 @@ const Home: NextPage = () => {
               <h2>作業3 &rarr;</h2>
           </button>
 
+          <button type="button" onClick={() => router.push('/sample')} className={styles.card}>
+              <h2>sample&rarr;</h2>
+          </button>
+
         </div>
       </main>
 
