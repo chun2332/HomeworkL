@@ -13,6 +13,10 @@ export const Calendar = styled.table`
     border: 1px #eeecec solid;
     width: 100%;
 
+    .carousel-btn {
+        display: none;
+    }
+
     th, td {
         width: 12.5%;
         text-align: center;
@@ -175,32 +179,37 @@ export const Calendar = styled.table`
     }
 
     @media (max-width: 900px) {
-        width: 160%;
+        width: 200%;
         
-        /* .carousel-btn {
-            height: 4rem;
-            width: 1.5rem;
-            background-color: #666;
-            opacity: 0.5;
-            position: absolute;
-            z-index: 99;
-            display: -webkit-box;
-            display: -ms-flexbox;
+        .carousel-btn {
+            width: 100%;
             display: flex;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-            flex-direction: row;
-            text-align: center;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            color: black;
-            font-weight: 900;
-        } */
+            justify-content: space-between;
+            position: absolute;
+            
+        }
+
+        .prev-btn {
+            position: absolute;
+            left: 25vw;
+            top: 34.3vh;
+            cursor: pointer;
+            border: none;
+        }
+
+        .next-btn {
+            position: absolute;
+            right: 0;
+            top: 34.3vh;
+            cursor: pointer;
+            border: none;
+        }
+
+        .next-btn, .prev-btn {
+            color: #fff;
+            background-color: #ababab;
+            line-height: 40px;
+        }
         
          .first-col {
             position: -webkit-sticky;
@@ -211,4 +220,6 @@ export const Calendar = styled.table`
             margin-top: -1px;
          }
     }
+
+    
 `

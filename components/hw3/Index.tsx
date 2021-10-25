@@ -4,22 +4,32 @@ import { IoMdArrowDropup } from 'react-icons/io';
 // styles
 import  { Calendar, Body }  from './styles/style';
 import Link from "next/link";
-// jQuery
-import $ from 'jquery';
+import React from 'react'
+import data from '../../data'
 
-const Index = () => {
+// const Index = () =>
+
+class Index extends React.Component {
     
     
-    return <Body>
-         {/* prev & next btn */}
-            <div className="carousel-btn carousel-btn-prev">
-                <span className="prev-btn"></span>
-            </div>
-            <div className="carousel-btn carousel-btn-next">
-                <span className="next-btn"></span>
-            </div>
+    render() {
         
+       
+
+        const leftB="＜";
+        const rightB = "＞";
+        
+        const Prev = () => {
+        };
+
+        
+        return <Body>
         <Calendar>
+        {/* prev & next btn */}
+            <div className="carousel-btn">
+                <button className="prev-btn"  onClick={()=>{}}>{leftB}</button>
+                   <button className="next-btn " onClick={()=>{}}>{rightB}</button>
+            </div>
                {/* row0 */}
                 <tr className="low-price-container">
                     <td className="low-price" colSpan={8}>
@@ -279,6 +289,10 @@ const Index = () => {
                 </tr>
        </Calendar>
     </Body>
+    }
+    
+    
+    
 }
 
 export default Index
