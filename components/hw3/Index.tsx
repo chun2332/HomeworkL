@@ -2,40 +2,31 @@
 import { MdCalendarToday } from 'react-icons/md';
 import { IoMdArrowDropup } from 'react-icons/io';
 // styles
-import  { Calendar, Body }  from './styles/style';
-import Link from "next/link";
-import React from 'react'
-import data from '../../data'
+import { Table, Body } from './styles/style';
 
-// const Index = () =>
+import  Link  from 'next/link'
 
-class Index extends React.Component {
+
+
+const Fztable = () => {
+
+    const leftB="＜";
+    const rightB = "＞";
+
     
-    
-    render() {
-        
-       
-
-        const leftB="＜";
-        const rightB = "＞";
-        
-        const Prev = () => {
-        };
-
-        
-        return <Body>
-        <Calendar>
+    return <Body>
+        <Table>
         {/* prev & next btn */}
             <div className="carousel-btn">
                 <button className="prev-btn"  onClick={()=>{}}>{leftB}</button>
                    <button className="next-btn " onClick={()=>{}}>{rightB}</button>
             </div>
                {/* row0 */}
-                <tr className="low-price-container">
+                {/* <tr className="low-price-container">
                     <td className="low-price" colSpan={8}>
                         <MdCalendarToday />低價月曆<IoMdArrowDropup />
                     </td>
-                </tr>
+                </tr> */}
                  {/* row1 */}
                 <tr className="row1">
                     <th className="first-col">
@@ -63,7 +54,7 @@ class Index extends React.Component {
                 <tr>
                     <th className="first-col">12/27(三)</th>
                     <td className="col-1 text-gray">--</td>
-                    <td className="col-2">
+                    <td className="col-2" >
                     <Link href="/Hw3"><a className="days-up">$15,568 </a></Link>
                     </td>
                     <td className="col-3">
@@ -287,12 +278,10 @@ class Index extends React.Component {
                         <Link href="/Hw3"><a className="days-up">$15,568 </a></Link>
                     </td>
                 </tr>
-       </Calendar>
+       </Table>
     </Body>
-    }
-    
-    
-    
+          
 }
 
-export default Index
+
+export default Fztable

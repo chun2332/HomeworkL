@@ -8,10 +8,11 @@ export const Body = styled.div`
     } 
 `
 
-export const Calendar = styled.table`
+export const Table = styled.table`
+    border-collapse: collapse;  
     border-spacing: 0;
     border: 1px #eeecec solid;
-    width: 100%;
+    /* width: 100%; */
 
     .carousel-btn {
         display: none;
@@ -32,7 +33,12 @@ export const Calendar = styled.table`
         }
     td {
         padding: 0;
+        cursor: pointer;
 
+        &:hover{
+            border: 3px solid #fe8400;
+            background-color: #fff9e3;
+        }
         
     }
 
@@ -47,9 +53,13 @@ export const Calendar = styled.table`
         background-color: #eeecec;
         color: #008cff;
         border-bottom: 2px solid white;
+        &:hover{
+            border: 1px solid #dad8d8;
+            background-color: #eeecec;
+        }
     }
     .row1 > th {
-        background-color: #f8f8f8;
+        background-color: #eaedf2;
     }
     .Lowprice {
         width: 100%;
@@ -192,7 +202,7 @@ export const Calendar = styled.table`
         .prev-btn {
             position: absolute;
             left: 25vw;
-            top: 34.3vh;
+            top: 28.5vh;
             cursor: pointer;
             border: none;
         }
@@ -200,7 +210,7 @@ export const Calendar = styled.table`
         .next-btn {
             position: absolute;
             right: 0;
-            top: 34.3vh;
+            top: 28.5vh;
             cursor: pointer;
             border: none;
         }
